@@ -24,9 +24,7 @@ namespace MvcProject.Controllers
             var BetweenCharacter = context.Writers.Count(x => x.WriterName.ToLower().Contains("a"));
             ViewBag.Value3 = BetweenCharacter;
             //En fazla başlığa sahip kategori
-            //var MaxTitleCount = context.Headings.Max(x => x.Category.CategoryName);
-            //var MaxTitleCount = context.Headings.Select(x=>x.CategoryID== Max(x => x.CategoryID))
-            var MaxTitleCount = context.Categories.Where(u => u.CategoryID == context.Headings.GroupBy(x => x.CategoryID).OrderByDescending(x => x.Count()).Select(x => x.Key).FirstOrDefault()).Select(x => x.CategoryName).FirstOrDefault();
+             var MaxTitleCount = context.Categories.Where(u => u.CategoryID == context.Headings.GroupBy(x => x.CategoryID).OrderByDescending(x => x.Count()).Select(x => x.Key).FirstOrDefault()).Select(x => x.CategoryName).FirstOrDefault();
             ViewBag.Value4 = MaxTitleCount;
             // Kategori tablosunda durumu true olan kategoriler ile false olan kategoriler arasındaki sayısal fark
             var CategoryStatusDifference = (context.Categories.Count(x=>x.CategoryStatus==true)- context.Categories.Count(x => x.CategoryStatus == false));
