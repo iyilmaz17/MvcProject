@@ -13,3 +13,10 @@ D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.migration_writer_edit.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writertitle_add.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_imagesizechange.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writeraddstatus.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_contentstatusadd.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_headingstatusadd.resources

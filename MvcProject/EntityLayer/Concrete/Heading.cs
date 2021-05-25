@@ -16,6 +16,7 @@ namespace EntityLayer.Concrete
         public string HeadingName { get; set; }
         public DateTime HeadingDate { get; set; }
 
+        public bool HeadingtStatus { get; set; }
         //ilişkili tablolunun anahtar ismiyloe bire bir aynı olmak zorunda 
 
         public int CategoryID { get; set; }
