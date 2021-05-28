@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<br />
+<div class="card-deck">
+    <div class="card text-white bg-gradient-orange col-md-5" style="max-width: 40rem" ;>
+        <!-- card text-white bg-primary mb-4-->
+        <!--card text-blue bg-secondary col-md-4-->
+        <div class="card-header"style="text-align:center";>@ViewBag.Value1</div>
+        <div class="card-body">
+            <h3 class="card-title">Toplam Kategori </h3>
+            <p class="card-text"></p>
+        </div>
+    </div>
+        <div class="card text-white bg-gradient-orange col-md-5" style="max-width: 40rem" ;>
+            <div class="card-header" style="text-align:center";>@ViewBag.Value2</div>
+            <div class="card-body">
+                <h3 class="card-title"> Yazılım kategorisi başlık sayısı </h3>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card text-white bg-gradient-orange col-md-5" style="max-width: 40rem" ;>
+            <div class="card-header" style="text-align:center";>@ViewBag.Value3</div>
+            <div class="card-body">
+                <h3 class="card-title">İçerisinde 'a' harfi geçen yazar isimleri </h3>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card text-white bg-gradient-orange col-md-5" style="max-width: 40rem" ;>
+            <div class="card-header" style="text-align:center";>@ViewBag.Value4</div>
+            <div class="card-body">
+                <h3 class="card-title">En Fazla Başlığa Sahip Kategori </h3>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card text-white bg-gradient-orange col-md-5" style="max-width: 40rem" ;>
+            <div class="card-header" style="text-align:center";>@ViewBag.Value5</div>
+            <div class="card-body">
+                <h3 class="card-title">Aktif-Pasif Kategori Farkı </h3>
+                <p class="card-text"></p>
+            </div>
+        </div>
+
+    </div>
+
