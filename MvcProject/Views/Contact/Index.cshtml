@@ -25,7 +25,7 @@
     <section class="content">
         <div class="row">
             <div class="col-md-3">
-                
+
                 @Html.Action("ContactPartial", "Contact")
             </div>
             <!-- /.col -->
@@ -84,7 +84,14 @@
                                             <td class="mailbox-star"><a href="/Contact/GetContactDetails/@item.ContectID"><i class="fas fa-star text-warning"></i></a></td>
                                             <td class="mailbox-name"><a href="/Contact/GetContactDetails/@item.ContectID">@item.UserName</a></td>
                                             <td class="mailbox-subject">
-                                                <b>@item.Subject</b>  - @item.Meassage.Substring(0,5)
+                                                <b>@item.Subject</b>  - @if (item.Meassage.Length < 30)
+                                                {
+                                                    @item.Meassage
+                                                }
+                                                else
+                                                {
+                                                    @item.Meassage.Substring(0, 30)
+                                                }
                                             </td>
                                             <td class="mailbox-attachment"></td>
                                             <td class="mailbox-date">5 mins ago</td>
