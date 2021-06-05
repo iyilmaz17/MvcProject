@@ -11,10 +11,10 @@ D:\MvcProject\BusinessLayer\bin\Debug\EntityLayer.pdb
 D:\MvcProject\BusinessLayer\bin\Debug\EntityLayer.dll.config
 D:\MvcProject\BusinessLayer\bin\Debug\EntityFramework.xml
 D:\MvcProject\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
-D:\MvcProject\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
 D:\MvcProject\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
 D:\MvcProject\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 D:\MvcProject\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\MvcProject\BusinessLayer\obj\Debug\BusinessLayer.pdb
 D:\MvcProject\BusinessLayer\bin\Debug\FluentValidation.dll
 D:\MvcProject\BusinessLayer\bin\Debug\FluentValidation.xml
+D:\MvcProject\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache

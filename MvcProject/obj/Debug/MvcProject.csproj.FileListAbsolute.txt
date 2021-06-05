@@ -72,7 +72,6 @@ D:\MvcProject\MvcProject\bin\System.Web.WebPages.Razor.xml
 D:\MvcProject\MvcProject\bin\Newtonsoft.Json.xml
 D:\MvcProject\MvcProject\bin\Antlr3.Runtime.pdb
 D:\MvcProject\MvcProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\MvcProject\MvcProject\obj\Debug\MvcProject.csprojAssemblyReference.cache
 D:\MvcProject\MvcProject\obj\Debug\MvcProject.csproj.CoreCompileInputs.cache
 D:\MvcProject\MvcProject\obj\Debug\MvcProject.csproj.CopyComplete
 D:\MvcProject\MvcProject\obj\Debug\MvcProject.dll
@@ -92,3 +91,4 @@ D:\MvcProject\MvcProject\bin\EntityFramework.SqlServer.dll
 D:\MvcProject\MvcProject\bin\EntityFramework.SqlServer.xml
 D:\MvcProject\MvcProject\bin\FluentValidation.dll
 D:\MvcProject\MvcProject\bin\FluentValidation.xml
+D:\MvcProject\MvcProject\obj\Debug\MvcProject.csproj.AssemblyReference.cache

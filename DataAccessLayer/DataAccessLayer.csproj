@@ -56,6 +56,8 @@
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
     <Compile Include="Abstract\IHeadingDal.cs" />
+    <Compile Include="Abstract\IImageFileDal.cs" />
+    <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
@@ -67,6 +69,8 @@
     <Compile Include="EntityFramework\EfContactDal.cs" />
     <Compile Include="EntityFramework\EfContentDal.cs" />
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
+    <Compile Include="EntityFramework\EfImageFileDal.cs" />
+    <Compile Include="EntityFramework\EfMessageDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
     <Compile Include="Migrations\202105141827086_migration_writer_edit.cs" />
     <Compile Include="Migrations\202105141827086_migration_writer_edit.designer.cs">
@@ -95,6 +99,22 @@
     <Compile Include="Migrations\202105281134347_mig_editHEadingStatus.cs" />
     <Compile Include="Migrations\202105281134347_mig_editHEadingStatus.designer.cs">
       <DependentUpon>202105281134347_mig_editHEadingStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106011225238_mig_add_message.cs" />
+    <Compile Include="Migrations\202106011225238_mig_add_message.designer.cs">
+      <DependentUpon>202106011225238_mig_add_message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106050645029_mig_contactdate.cs" />
+    <Compile Include="Migrations\202106050645029_mig_contactdate.designer.cs">
+      <DependentUpon>202106050645029_mig_contactdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106051014574_mig_addimagefile.cs" />
+    <Compile Include="Migrations\202106051014574_mig_addimagefile.designer.cs">
+      <DependentUpon>202106051014574_mig_addimagefile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106051153342_mig_message_add_messagedraft.cs" />
+    <Compile Include="Migrations\202106051153342_mig_message_add_messagedraft.designer.cs">
+      <DependentUpon>202106051153342_mig_message_add_messagedraft.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,6 +150,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105281134347_mig_editHEadingStatus.resx">
       <DependentUpon>202105281134347_mig_editHEadingStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106011225238_mig_add_message.resx">
+      <DependentUpon>202106011225238_mig_add_message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106050645029_mig_contactdate.resx">
+      <DependentUpon>202106050645029_mig_contactdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106051014574_mig_addimagefile.resx">
+      <DependentUpon>202106051014574_mig_addimagefile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106051153342_mig_message_add_messagedraft.resx">
+      <DependentUpon>202106051153342_mig_message_add_messagedraft.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

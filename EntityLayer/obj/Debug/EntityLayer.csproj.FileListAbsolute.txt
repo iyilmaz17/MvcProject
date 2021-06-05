@@ -5,8 +5,8 @@ D:\MvcProject\EntityLayer\bin\Debug\EntityFramework.dll
 D:\MvcProject\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
 D:\MvcProject\EntityLayer\bin\Debug\EntityFramework.xml
 D:\MvcProject\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
-D:\MvcProject\EntityLayer\obj\Debug\EntityLayer.csprojAssemblyReference.cache
 D:\MvcProject\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
 D:\MvcProject\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 D:\MvcProject\EntityLayer\obj\Debug\EntityLayer.dll
 D:\MvcProject\EntityLayer\obj\Debug\EntityLayer.pdb
+D:\MvcProject\EntityLayer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache

@@ -8,7 +8,6 @@ D:\MvcProject\DataAccessLayer\bin\Debug\EntityLayer.pdb
 D:\MvcProject\DataAccessLayer\bin\Debug\EntityLayer.dll.config
 D:\MvcProject\DataAccessLayer\bin\Debug\EntityFramework.xml
 D:\MvcProject\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
-D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.dll
@@ -21,3 +20,8 @@ D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writeradd
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_contentstatusadd.resources
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_headingstatusadd.resources
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_editHEadingStatus.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_message.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_contactdate.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_addimagefile.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_message_add_messagedraft.resources

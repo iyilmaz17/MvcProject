@@ -24,10 +24,7 @@
     <!-- Main content -->
     <section class="content">
         <div class="row">
-            <div class="col-md-3">
-
-                @Html.Action("ContactPartial", "Contact")
-            </div>
+            @Html.Action("ContactPartial", "Contact")
             <!-- /.col -->
             <div class="col-md-9">
                 <div class="card card-primary card-outline">
@@ -94,7 +91,7 @@
                                                 }
                                             </td>
                                             <td class="mailbox-attachment"></td>
-                                            <td class="mailbox-date">5 mins ago</td>
+                                            <td class="mailbox-date">@(((DateTime)item.ContactDate).ToString("dd MMMM yyyy"))</td>
                                         </tr>
                                     }
                                 </tbody>
