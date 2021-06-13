@@ -46,6 +46,7 @@ namespace MvcProject.Controllers
             headingManager.HeadingAdd(p);
             return RedirectToAction("Index");
         }
+        [HttpGet]
         public ActionResult EditHeading(int id)
         {
             List<SelectListItem> valuecategory = (from x in categoryManager.GetList()

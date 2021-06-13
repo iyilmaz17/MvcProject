@@ -16,6 +16,7 @@ namespace MvcProject.Controllers
         // GET: Message
         MessageManager messageManager = new MessageManager(new EfMessageDal());
         MessageValidator messaValidator = new MessageValidator();
+        [Authorize]
         public ActionResult Inbox()
         {
             var messagelist = messageManager.GetListInbox();
@@ -42,20 +43,42 @@ namespace MvcProject.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult NewMessage(Message p)
+        public ActionResult NewMessage(Message p, string button)
         {
-            ValidationResult results = messaValidator.Validate(p);
-            if (results.IsValid)
+            if (button == "Save")
             {
-                p.MessageDate = DateTime.Parse(DateTime.Now.ToShortDateString());
-                messageManager.MessageAdd(p);
-                return RedirectToAction("Sendbox");
-            }
-            else
-            {
-                foreach (var item in results.Errors)
+                ValidationResult results = messaValidator.Validate(p);
+                if (results.IsValid)
                 {
-                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                    p.MessageDate = DateTime.Parse(DateTime.Now.ToShortDateString());
+                    messageManager.MessageAdd(p);
+                    return RedirectToAction("Sendbox");
+                }
+                else
+                {
+                    foreach (var item in results.Errors)
+                    {
+                        ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                    }
+                }
+            }
+            else if (button == "Send")
+            {
+                ValidationResult results = messaValidator.Validate(p);
+                if (results.IsValid)
+                {
+                    p.MessageDate = DateTime.Parse(DateTime.Now.ToShortDateString());
+                    p.MessageDraft = true;
+                    p.SenderMail = "admin@gmail.com";
+                    messageManager.MessageAdd(p);
+                    return RedirectToAction("MessageDraft");
+                }
+                else
+                {
+                    foreach (var item in results.Errors)
+                    {
+                        ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                    }
                 }
             }
             return View();
@@ -63,11 +86,10 @@ namespace MvcProject.Controllers
         [HttpPost]
         public ActionResult NewDraft(Message p)
         {
-                p.SenderMail = "admin@gmail.com";
-                p.MessageDate = DateTime.Parse(DateTime.Now.ToShortDateString());
-                messageManager.MessageAdd(p);
-                return RedirectToAction("Sendbox");
-            
+            p.SenderMail = "admin@gmail.com";
+            p.MessageDate = DateTime.Parse(DateTime.Now.ToShortDateString());
+            messageManager.MessageAdd(p);
+            return RedirectToAction("Sendbox");
         }
         public ActionResult MessageDraft()
         {

@@ -29,7 +29,7 @@
             <div class="col-md-9">
                 <div class="card card-primary card-outline">
                     <div class="card-header">
-                        <h3 class="card-title">Taslaklar</h3>
+                        <h3 class="card-title">Gönderilen Mesajlar</h3>
                         <div class="card-tools">
                             <div class="input-group input-group-sm">
                                 <input type="text" class="form-control" placeholder="Mail kutusunda ara">
@@ -78,10 +78,10 @@
                                                     <label for="check1"></label>
                                                 </div>
                                             </td>
-                                            <td class="mailbox-star"><a href="/Message/MessageDraftDetails/@item.MessageId"><i class="fas fa-star text-warning"></i></a></td>
-                                            <td class="mailbox-name"><a href="/Message/MessageDraftDetails/@item.MessageId">@item.SenderMail</a></td>
+                                            <td class="mailbox-star"><a href="/Message/GetSendBoxDetails/@item.MessageId"><i class="fas fa-star text-warning"></i></a></td>
+                                            <td class="mailbox-name"><a href="/Message/GetSendBoxDetails/@item.MessageId">@item.ReceiverMail</a></td>
                                             <td class="mailbox-subject">
-                                                <b>@item.Subject</b>  - @if (item.MessageContent.Length < 30)
+                                                <b>@item.Subject</b>  -@if (item.MessageContent.Length < 30)
                                                 {
                                                     @item.MessageContent
                                                 }
@@ -132,7 +132,6 @@
         </div>
         <!-- /.row -->
     </section>
-
 </body>
 </html>
 

@@ -25,3 +25,4 @@ D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_messa
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_contactdate.resources
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_addimagefile.resources
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_message_add_messagedraft.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_admin_table_add.resources
