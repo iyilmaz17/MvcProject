@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,13 @@ namespace MvcProject.Controllers.WriterPanel
     {
         // GET: WriterPanelContent
         ContentManager contentManager = new ContentManager(new EfContentDal());
-        public ActionResult MyContent()
+        public ActionResult MyContent(string p)
         {
-            var contentvalues = contentManager.GetListByWriter();
+            Context context = new Context();
+            p = (string)Session["WriterMail"];
+            var writeridinfo = context.Writers.Where(x => x.WriterMail == p).Select(y => y.WriterID).FirstOrDefault();
+            // ViewBag.d = p;
+            var contentvalues = contentManager.GetListByWriter(writeridinfo);
             return View(contentvalues);
         }
     }

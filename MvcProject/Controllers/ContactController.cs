@@ -16,6 +16,7 @@ namespace MvcProject.Controllers
         Context context = new Context();
         ContactManager contactManager = new ContactManager(new EfContactDal());
         ContactValidator validationRules = new ContactValidator();
+        
         public ActionResult Index()
         {
             var contactvalues = contactManager.GetList();
@@ -37,8 +38,11 @@ namespace MvcProject.Controllers
 
             var contacMail = context.Contacts.Count().ToString();
             ViewBag.contacMail = contacMail;
+            
             var draft = context.Messages.Count(x => x.MessageDraft == true).ToString();
             ViewBag.draft = draft;
+            var isRead = context.Messages.Count(x => x.ReceiverMail == "Ceylan@gmail.com"&& x.IsRead == false).ToString();
+            ViewBag.isRead = isRead;
             return PartialView();
         }
         

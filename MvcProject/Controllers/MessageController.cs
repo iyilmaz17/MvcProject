@@ -102,5 +102,29 @@ namespace MvcProject.Controllers
             var values = messageManager.GetByID(id);
             return View(values);
         }
+        public ActionResult MessageIsRead(int id)
+        {
+            var result = messageManager.GetByID(id);
+            if (result.IsRead==false)
+            {
+                result.IsRead = true;
+            }
+            else
+            {
+                result.IsRead = false;
+            }
+            messageManager.MessageUpdate(result);
+            return RedirectToAction("Inbox");
+        }
+        public ActionResult MessageRead()
+        {
+            var result = messageManager.GetListInbox().Where(x => x.IsRead == true).ToList();
+            return View(result);
+        }
+        public  ActionResult MessageUnRead()
+        {
+            var result = messageManager.GetAllRead();
+            return View(result);
+        }
     }
 }

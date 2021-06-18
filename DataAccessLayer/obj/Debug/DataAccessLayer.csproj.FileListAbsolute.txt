@@ -26,3 +26,9 @@ D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_contactda
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_addimagefile.resources
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_message_add_messagedraft.resources
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_admin_table_add.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_AboutStatus_add.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_AboutTitle_Add.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_AboutTitle_Edit.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_TalentLevel_add.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_edit.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_Message_table_edit.resources

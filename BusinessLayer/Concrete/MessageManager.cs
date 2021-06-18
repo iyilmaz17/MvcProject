@@ -18,6 +18,11 @@ namespace BusinessLayer.Concrete
             _messageDal = messageDal;
         }
 
+        public List<Message> GetAllRead()
+        {
+            return _messageDal.List(x => x.ReceiverMail == "Ceylan@gmail.com").Where(x => x.IsRead == false).ToList();
+        }
+
         public Message GetByID(int id)
         {
             return _messageDal.Get(x => x.MessageId == id);
@@ -45,7 +50,7 @@ namespace BusinessLayer.Concrete
 
         public void MessageUpdate(Message message)
         {
-            throw new NotImplementedException();
+            _messageDal.Update(message);
         }
     }
 }

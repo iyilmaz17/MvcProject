@@ -43,7 +43,6 @@ namespace DataAccessLayer.Concrete.Repositories
         public List<T> List()
         {
             return _object.ToList();
-
         }
 
         public List<T> List(Expression<Func<T, bool>> filter)

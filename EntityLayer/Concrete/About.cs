@@ -11,8 +11,10 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int AboutID { get; set; }
-
         [StringLength(1000)]
+        public string AboutTitle { get; set; }
+
+        [StringLength(50)]
         public string AboutDetails1 { get; set; }
 
         [StringLength(1000)]
@@ -23,5 +25,6 @@ namespace EntityLayer.Concrete
 
         [StringLength(100)]
         public string AboutImage2 { get; set; }
+        public bool AboutStatus { get; set; }
     }
 }
