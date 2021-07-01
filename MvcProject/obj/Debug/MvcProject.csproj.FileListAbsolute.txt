@@ -92,3 +92,7 @@ D:\MvcProject\MvcProject\bin\EntityFramework.SqlServer.xml
 D:\MvcProject\MvcProject\bin\FluentValidation.dll
 D:\MvcProject\MvcProject\bin\FluentValidation.xml
 D:\MvcProject\MvcProject\obj\Debug\MvcProject.csproj.AssemblyReference.cache
+D:\MvcProject\MvcProject\bin\PagedList.dll
+D:\MvcProject\MvcProject\bin\PagedList.Mvc.dll
+D:\MvcProject\MvcProject\bin\PagedList.xml
+D:\MvcProject\MvcProject\bin\PagedList.Mvc.xml

@@ -17,14 +17,14 @@ namespace MvcProject.Controllers
         MessageManager messageManager = new MessageManager(new EfMessageDal());
         MessageValidator messaValidator = new MessageValidator();
         [Authorize]
-        public ActionResult Inbox()
+        public ActionResult Inbox(string p)
         {
-            var messagelist = messageManager.GetListInbox();
+            var messagelist = messageManager.GetListInbox(p);
             return View(messagelist);
         }
-        public ActionResult Sendbox()
+        public ActionResult Sendbox(string p)
         {
-            var messagelist = messageManager.GetListSendbox();
+            var messagelist = messageManager.GetListSendbox(p);
             return View(messagelist);
         }
         public ActionResult GetInBoxDetails(int id)
@@ -91,9 +91,9 @@ namespace MvcProject.Controllers
             messageManager.MessageAdd(p);
             return RedirectToAction("Sendbox");
         }
-        public ActionResult MessageDraft()
+        public ActionResult MessageDraft(string p)
         {
-            var drafList = messageManager.GetListInbox().FindAll(x => x.MessageDraft == true);
+            var drafList = messageManager.GetListInbox(p).FindAll(x => x.MessageDraft == true);
             return View(drafList);
 
         }
@@ -116,9 +116,9 @@ namespace MvcProject.Controllers
             messageManager.MessageUpdate(result);
             return RedirectToAction("Inbox");
         }
-        public ActionResult MessageRead()
+        public ActionResult MessageRead(string p)
         {
-            var result = messageManager.GetListInbox().Where(x => x.IsRead == true).ToList();
+            var result = messageManager.GetListInbox(p).Where(x => x.IsRead == true).ToList();
             return View(result);
         }
         public  ActionResult MessageUnRead()
