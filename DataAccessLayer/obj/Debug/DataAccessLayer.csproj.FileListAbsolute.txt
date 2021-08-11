@@ -32,3 +32,16 @@ D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_AboutTitl
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_TalentLevel_add.resources
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_edit.resources
 D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_Message_table_edit.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.add_admin_role.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_role_add.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.admin_role_edit.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.admin_role_update.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_admin_role_edit.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_mig1.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_mig2.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_mig3.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_mig4.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_mig5.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_mig6.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_admin_table_edit.resources
+D:\MvcProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_mig51.resources

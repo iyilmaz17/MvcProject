@@ -1,0 +1,41 @@
+﻿@model EntityLayer.Concrete.TalentLevel
+@{
+    ViewBag.Title = "AddTalent";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yetenek Kartı Ekleme Sayfası</h2>
+@using (Html.BeginForm("AddTalent", "TalentPage", FormMethod.Post))
+{
+    <div class="form-group">
+        <div>
+            <div class="row gx-5">
+                <div class="col" style="margin-top:10px; margin-bottom:5px;">
+
+                    @Html.Label("Yetenek Adı")
+                    @Html.TextBoxFor(x=> x.Skill, new { @class = "form-control" })
+                </div>
+                <div class="col-7" style="margin-top:10px; margin-bottom:5px; margin-right:15px;">
+                    @Html.Label("Yetenek Seviyesi")
+                    @Html.TextBoxFor(x => x.SkillPoint, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-info" id="added">Ekle</button>
+    </div>
+}
+<br />
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+
+<script>
+        $('#added').click(function () {
+            swal({
+                title: "Eklendi!",
+                text: "Kart Başarıyla Eklendi!",
+                icon: "success",
+                button: false
+            });
+        });
+</script>
+

@@ -1,0 +1,37 @@
+﻿@using EntityLayer.Concrete
+@model List<About>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@{string name = "";}
+@{string status = "";}
+
+<h2>Hakkımızda</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Sıra</th>
+        <th>Hakkımda Başlığı</th>
+        <th>Durumu</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        if (item.AboutStatus == true)
+        {
+            name = "Pasif Yap";
+            status = "btn btn-danger";
+        }
+        if (item.AboutStatus == false)
+        {
+            name = "Aktif Yap";
+            status = "btn btn-success";
+        }
+        <tr>
+            <td>@item.AboutID</td>
+            <td><a href="#">@item.AboutTitle</a></td>
+            <td><a href="#" class="@status">@name</a></td>
+        </tr>
+    }
+</table>
+@Html.Action("AboutPartial", "About")

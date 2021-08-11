@@ -1,0 +1,11 @@
+D:\MvcProject\EntityLayer\bin\Release\EntityLayer.dll.config
+D:\MvcProject\EntityLayer\bin\Release\EntityLayer.dll
+D:\MvcProject\EntityLayer\bin\Release\EntityLayer.pdb
+D:\MvcProject\EntityLayer\bin\Release\EntityFramework.dll
+D:\MvcProject\EntityLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\MvcProject\EntityLayer\bin\Release\EntityFramework.xml
+D:\MvcProject\EntityLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\MvcProject\EntityLayer\obj\Release\EntityLayer.csproj.CoreCompileInputs.cache
+D:\MvcProject\EntityLayer\obj\Release\EntityLayer.csproj.CopyComplete
+D:\MvcProject\EntityLayer\obj\Release\EntityLayer.dll
+D:\MvcProject\EntityLayer\obj\Release\EntityLayer.pdb

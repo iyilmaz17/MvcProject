@@ -1,0 +1,28 @@
+﻿@model EntityLayer.Concrete.Admin
+@{
+    ViewBag.Title = "AddAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<h1>Yeni ADmin Ekleme Sayfası</h1>
+<br />
+@using (Html.BeginForm("AddAdmin", "Authorization", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.Label("Admin Adı")
+    @Html.TextBoxFor(x => x.AdminUserName, new { @class = "form-control" })
+    <br /> <br />
+    @Html.Label("Şifreyi Giriniz")
+    @Html.TextBoxFor(x => x.AdminPassword, new { @class = "form-control" })
+    <br /> <br />
+    @Html.Label("Rolü Giriniz")
+    @Html.TextBoxFor(x => x.AdminRole, new { @class = "form-control" })
+    <br /> <br />
+    <button id="btn2">Kaydet</button>
+</div>
+}
+

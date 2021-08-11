@@ -1,0 +1,27 @@
+﻿@model EntityLayer.Concrete.TalentLevel
+@{
+    ViewBag.Title = "UpdateTalent";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("UpdateTalent", "TalentPage", FormMethod.Post))
+{
+    <div class="form-group">
+        <div>
+            <div class="row gx-5">
+                @Html.HiddenFor(x => x.SkillId, new { @class = "form-control" })
+                <div class="col" style="margin-top:10px; margin-bottom:5px;">
+
+                    @Html.Label("Yetenek Adı")
+                    @Html.TextBoxFor(x => x.Skill, new { @class = "form-control" })
+                </div>
+                <div class="col-7" style="margin-top:10px; margin-bottom:5px; margin-right:15px;">
+                    @Html.Label("Yetenek Seviyesi")
+                    @Html.TextBoxFor(x => x.SkillPoint, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-success">Güncelle</button>
+    </div>
+}
+

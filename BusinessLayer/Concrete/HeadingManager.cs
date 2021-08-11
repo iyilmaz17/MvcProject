@@ -47,5 +47,6 @@ namespace BusinessLayer.Concrete
         {
             _headingDal.Update(heading);
         }
+        
     }
 }

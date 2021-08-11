@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Concrete;
+﻿using BusinessLayer.Abstract;
+using BusinessLayer.Concrete;
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
@@ -67,12 +68,12 @@ namespace MvcProject.Controllers
             var captchaResponse = JsonConvert.DeserializeObject<captchaResponse>(reply);
 
             var writeruserinfo = writerLoginManager.GetWriter(writer.WriterMail, writer.WriterPassword);
-            if (!captchaResponse.Succes)
-            {
-                TempData["Message"] = "Lütfen güvenliği doğrulayınız.";
-                return View();
-            }
-            if (writeruserinfo != null )
+            //if (!captchaResponse.Succes)
+            //{
+            //    TempData["Message"] = "Lütfen güvenliği doğrulayınız.";
+            //    return View();
+            //}
+            if (writeruserinfo != null)
             {
                 FormsAuthentication.SetAuthCookie(writeruserinfo.WriterMail, false);
                 Session["WriterMail"] = writeruserinfo.WriterMail;

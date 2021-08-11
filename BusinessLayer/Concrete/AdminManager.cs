@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    
+
     public class AdminManager : IAdminService
     {
         IAdminDal _adminDal;
@@ -27,6 +27,12 @@ namespace BusinessLayer.Concrete
         public void Delete(Admin admin)
         {
             _adminDal.Delete(admin);
+        }
+
+        public Admin GetAdmin(string mail, string password)
+        {
+            return _adminDal.Get(x => x.AdminUserName == mail && x.AdminPassword == password);
+
         }
 
         public Admin GetById(int id)
